@@ -1,5 +1,6 @@
-using Unity.VisualScripting;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Player : MonoBehaviour
     private Animator animator;
     private bool isRunning;
     private bool isGrounded;
+    private bool isDied;
     private SpriteRenderer sr;
     private const string IS_RUNNING = "IsRunning";
     private const string IS_JUMPING = "IsJumping";
@@ -46,9 +48,28 @@ public class Player : MonoBehaviour
     {
         if (collision.collider.CompareTag("Ground"))
             isGrounded = true;
-        if (collision.collider.CompareTag("Enemy"))
+        if (!isDied && collision.collider.CompareTag("Enemy"))
+        {
+            isDied = true;
             animator.SetTrigger("TouchEnemy");
+            ReloadSceneWithDelay(0.7f);
+        }
 
+    }
+
+    // Метод для перезагрузки сцены с задержкой
+    public void ReloadSceneWithDelay(float delayInSeconds)
+    {
+        StartCoroutine(ReloadSceneCoroutine(delayInSeconds));
+    }
+
+    private IEnumerator ReloadSceneCoroutine(float delayInSeconds)
+    {
+        // Ждем указанное количество секунд
+        yield return new WaitForSeconds(delayInSeconds);
+
+        // Перезагружаем текущую сцену
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void OnCollisionExit2D(Collision2D collision)
