@@ -57,7 +57,6 @@ public class Player : MonoBehaviour
 
     }
 
-    // Метод для перезагрузки сцены с задержкой
     public void ReloadSceneWithDelay(float delayInSeconds)
     {
         StartCoroutine(ReloadSceneCoroutine(delayInSeconds));
@@ -65,10 +64,7 @@ public class Player : MonoBehaviour
 
     private IEnumerator ReloadSceneCoroutine(float delayInSeconds)
     {
-        // Ждем указанное количество секунд
         yield return new WaitForSeconds(delayInSeconds);
-
-        // Перезагружаем текущую сцену
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
