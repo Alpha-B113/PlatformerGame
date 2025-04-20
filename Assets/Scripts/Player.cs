@@ -26,7 +26,9 @@ public class Player : MonoBehaviour
         isRunning = false;
         if (Input.GetKey(KeyCode.W) && isGrounded)
         {
-            rb.AddForce(Vector2.up * 5, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * 10, ForceMode2D.Impulse);
+            animator.SetBool(IS_JUMPING, true);
+            isGrounded = false;
         }
 
         var horizontalMove = Input.GetAxis("Horizontal") * movingSpeed;
@@ -41,13 +43,16 @@ public class Player : MonoBehaviour
         rb.linearVelocity = new Vector2(horizontalMove, rb.linearVelocityY);
 
         animator.SetBool(IS_RUNNING, isRunning);
-        animator.SetBool(IS_JUMPING, !isGrounded);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Ground"))
+        {
+            animator.SetBool(IS_JUMPING, false);
             isGrounded = true;
+        }
+
         if (!isDied && collision.collider.CompareTag("Enemy"))
         {
             isDied = true;
@@ -71,6 +76,8 @@ public class Player : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Ground"))
+        {
             isGrounded = false;
+        }
     }
 }
