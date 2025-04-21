@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         isRunning = false;
         if (Input.GetKey(KeyCode.W) && isGrounded)
@@ -59,7 +59,6 @@ public class Player : MonoBehaviour
             animator.SetTrigger("TouchEnemy");
             ReloadSceneWithDelay(0.7f);
         }
-
     }
 
     public void ReloadSceneWithDelay(float delayInSeconds)

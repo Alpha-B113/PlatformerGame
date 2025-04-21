@@ -4,7 +4,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 {
     public Transform followTransform;
 
-    void FixedUpdate()
+    void Update()
     {
         transform.position = new Vector3(followTransform.position.x, followTransform.position.y, transform.position.z);
     }
