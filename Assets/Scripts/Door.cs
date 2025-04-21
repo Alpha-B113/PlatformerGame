@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DoorEnemy : MonoBehaviour
+public class Door : MonoBehaviour
 {
     private Animator animator;
 
