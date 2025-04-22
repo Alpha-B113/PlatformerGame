@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
     private IEnumerator ReloadSceneCoroutine(float delayInSeconds)
     {
         yield return new WaitForSeconds(delayInSeconds);
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void OnCollisionExit2D(Collision2D collision)

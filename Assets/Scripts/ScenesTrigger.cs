@@ -1,15 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ScenesManager : MonoBehaviour
+public class ScenesTrigger : MonoBehaviour
 {
     public string SceneName;
-    private bool shouldMove = false;
-
+    private bool isTriggered = false;
 
     private void Update()
     {
-        if (shouldMove && Input.GetKeyDown(KeyCode.E))
+        if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
             SceneManager.LoadScene(SceneName);
         }
@@ -19,7 +18,7 @@ public class ScenesManager : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            shouldMove = true;
+            isTriggered = true;
         }
     }
 
@@ -27,7 +26,7 @@ public class ScenesManager : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            shouldMove = false;
+            isTriggered = false;
         }
     }
 }
