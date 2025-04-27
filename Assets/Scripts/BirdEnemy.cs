@@ -44,20 +44,6 @@ public class BirdEnemy : MonoBehaviour
             sr.flipY = true;
     }
 
-    private void FlipSprite(Vector2 direction)
-    {
-        // Если направление движения влево, делаем масштаб по оси X отрицательным
-        if (direction.x < 0)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
-        // Если направление движения вправо, делаем масштаб по оси X положительным
-        else if (direction.x > 0)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Проверяем, вошел ли игрок в зону обнаружения
