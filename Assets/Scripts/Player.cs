@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
         isRunning = false;
         if (Input.GetKey(KeyCode.W) && isGrounded)
         {
-            rb.AddForce(Vector2.up * 10, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * 11, ForceMode2D.Impulse);
             animator.SetBool(IS_JUMPING, true);
             isGrounded = false;
         }

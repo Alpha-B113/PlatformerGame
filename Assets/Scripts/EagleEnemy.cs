@@ -6,7 +6,7 @@ public class EagleEnemy : MonoBehaviour
     private SpriteRenderer sr;
     public float speed = 7f;
 
-    private bool isTriggered = false; // Флаг, указывающий, преследует ли птица игрока
+    private bool isTriggered = false;
     private float angle;
     private Vector3 direction;
 
@@ -35,7 +35,6 @@ public class EagleEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Проверяем, вошел ли игрок в зону обнаружения
         if (other.CompareTag("Player"))
         {
             isTriggered = true;
