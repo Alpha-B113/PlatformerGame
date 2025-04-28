@@ -4,7 +4,7 @@ public class EagleEnemy : MonoBehaviour
 {
     public Transform player;
     private SpriteRenderer sr;
-    public float speed = 7f;
+    public float speed = 0.05f;
 
     private bool isTriggered = false;
     private float angle;
@@ -18,7 +18,7 @@ public class EagleEnemy : MonoBehaviour
     void Update()
     {
         if (isTriggered)
-            transform.position += direction * 0.05f;
+            transform.position += direction * speed;
     }
 
     private void FlipEagle(float angle)

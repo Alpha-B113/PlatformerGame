@@ -270,6 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followTransform: {fileID: 1825926261}
+  offset: 0
 --- !u!1 &411950659
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,15 +469,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 467841299818909778, guid: f808eaa267ed7144d95c4853dd351cbb, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.6398121
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 467841299818909778, guid: f808eaa267ed7144d95c4853dd351cbb, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.6699591
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 467841299818909778, guid: f808eaa267ed7144d95c4853dd351cbb, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5498949
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 467841299818909778, guid: f808eaa267ed7144d95c4853dd351cbb, type: 3}
       propertyPath: m_LocalPosition.x
