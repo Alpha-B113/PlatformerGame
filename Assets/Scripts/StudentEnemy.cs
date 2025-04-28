@@ -18,18 +18,15 @@ public class StudentEnemy : MonoBehaviour
 
     void Update()
     {
-        if (rb.position.x <= finishLeftX)
-        {
-            direction.x *= -1;
-            sr.flipX ^= true;
-            rb.position = new Vector2(finishLeftX, rb.position.y);
-        }
-        else if (rb.position.x >= finishRightX)
-        {
-            direction.x *= -1;
-            sr.flipX ^= true;
-            rb.position = new Vector2(finishRightX, rb.position.y);
-        }
         rb.MovePosition(rb.position + direction);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("EnemyBoundary"))
+        {
+            direction.x *= -1;
+            sr.flipX ^= true;
+        }
     }
 }

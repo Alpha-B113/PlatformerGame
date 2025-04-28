@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -24,9 +25,15 @@ public class Player : MonoBehaviour
     private void Update()
     {
         isRunning = false;
+        if (rb.linearVelocity == Vector2.zero)
+        {
+            isGrounded = true;
+            animator.SetBool(IS_JUMPING, false);
+        }
         if (Input.GetKey(KeyCode.W) && isGrounded)
         {
-            rb.AddForce(Vector2.up * 11, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * 10.5f, ForceMode2D.Impulse);
+            rb.linearVelocityY = Math.Min(10.5f, rb.linearVelocityY);
             animator.SetBool(IS_JUMPING, true);
             isGrounded = false;
         }
