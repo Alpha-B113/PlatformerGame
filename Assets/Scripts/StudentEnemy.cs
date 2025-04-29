@@ -7,9 +7,7 @@ public class StudentEnemy : MonoBehaviour
     private SpriteRenderer sr;
 
     public Vector2 direction = new Vector2(-0.1f, 0);
-    public float finishLeftX;
-    public float finishRightX;
-
+    
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();

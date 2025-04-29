@@ -7,8 +7,6 @@ public class Rat : MonoBehaviour
     private SpriteRenderer sr;
 
     public Vector2 direction = new Vector2(-0.1f, 0);
-    public float finishLeftX;
-    public float finishRightX;
 
     private void Awake()
     {
@@ -18,18 +16,15 @@ public class Rat : MonoBehaviour
 
     void Update()
     {
-        if (rb.position.x <= finishLeftX)
-        {
-            direction.x *= -1;
-            sr.flipX ^= true;
-            rb.position = new Vector2(finishLeftX, rb.position.y);
-        }
-        else if (rb.position.x >= finishRightX)
-        {
-            direction.x *= -1;
-            sr.flipX ^= true;
-            rb.position = new Vector2(finishRightX, rb.position.y);
-        }
         rb.MovePosition(rb.position + direction);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("EnemyBoundary"))
+        {
+            direction.x *= -1;
+            sr.flipX ^= true;
+        }
     }
 }
