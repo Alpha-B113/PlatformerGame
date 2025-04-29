@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
         {
             isDied = true;
             animator.SetTrigger("TouchEnemy");
-            ReloadSceneWithDelay(0.7f);
+            ReloadSceneWithDelay(0.1f);
         }
     }
 
