@@ -10,6 +10,7 @@ TagManager:
   - StudentBoundary
   - Boundary
   - EnemyBoundary
+  - colisionApple0
   layers:
   - Default
   - TransparentFX
