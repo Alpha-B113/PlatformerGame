@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class BirdEnemy : MonoBehaviour
 {
-    public Transform player; // Ссылка на игрока
+    public Transform Player;
     private SpriteRenderer sr;
-    public float speed = 3f; // Скорость движения птицы
-
-    private bool isChasing = false; // Флаг, указывающий, преследует ли птица игрока
+    public float speed = 0.05f;
+    public bool IsTriggered = false;
+    private Vector3 direction;
+    private float angle;
 
     void Awake()
     {
@@ -15,24 +16,20 @@ public class BirdEnemy : MonoBehaviour
 
     void Update()
     {
-        if (isChasing)
+        if (IsTriggered)
         {
-            Vector2 direction = (player.position - transform.position).normalized;
-            transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0, 0, angle);
+            transform.position = Vector2.MoveTowards(transform.position, Player.position, speed);
+            direction = (Player.position - transform.position).normalized;
+            angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             FlipBird(angle);
         }
-        else
-        {
-            transform.position += new Vector3(-speed * Time.deltaTime, 0, 0);
-            sr.flipX = false;
-        }
+        else if (direction != null)
+            transform.position += direction * speed;
     }
 
     private void FlipBird(float angle)
     {
+        transform.rotation = Quaternion.Euler(0, 0, angle);
         sr.flipX = true;
         if (0 <= angle && angle <= 90)
             sr.flipY = false;
@@ -42,23 +39,5 @@ public class BirdEnemy : MonoBehaviour
             sr.flipY = false;
         else
             sr.flipY = true;
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        // Проверяем, вошел ли игрок в зону обнаружения
-        if (other.CompareTag("Player"))
-        {
-            isChasing = true; // Начинаем преследование
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        // Если игрок покинул зону обнаружения
-        if (other.CompareTag("Player"))
-        {
-            isChasing = false; // Останавливаем преследование
-        }
     }
 }

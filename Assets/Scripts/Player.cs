@@ -41,9 +41,9 @@ public class Player : MonoBehaviour
         var horizontalMove = Input.GetAxis("Horizontal") * movingSpeed;
 
         if (horizontalMove > 0.1)
-            sr.flipX = true;
-        else if (horizontalMove < -0.1)
             sr.flipX = false;
+        else if (horizontalMove < -0.1)
+            sr.flipX = true;
 
         isRunning = Mathf.Abs(horizontalMove) > 0.1 && isGrounded;
 
@@ -64,7 +64,15 @@ public class Player : MonoBehaviour
         {
             isDied = true;
             animator.SetTrigger("TouchEnemy");
-            ReloadSceneWithDelay(0.1f);
+            ReloadSceneWithDelay(0.7f);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Ground"))
+        {
+            isGrounded = false;
         }
     }
 
@@ -77,13 +85,5 @@ public class Player : MonoBehaviour
     {
         yield return new WaitForSeconds(delayInSeconds);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Ground"))
-        {
-            isGrounded = false;
-        }
     }
 }
