@@ -4,14 +4,17 @@ public class BirdEnemy : MonoBehaviour
 {
     public Transform Player;
     private SpriteRenderer sr;
-    public float speed = 0.05f;
+    public float speed;
     public bool IsTriggered = false;
     private Vector3 direction;
     private float angle;
+    public int attacksNumber;
 
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
+        attacksNumber = Random.Range(1, 5);
+        speed = Random.Range(4.5f, 6f) / 100f;
     }
 
     void Update()
