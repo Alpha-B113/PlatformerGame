@@ -3,18 +3,19 @@ using UnityEngine;
 public class BirdEnemy : MonoBehaviour
 {
     public Transform Player;
-    private SpriteRenderer sr;
-    public float speed;
+    public int attacksNumber;
     public bool IsTriggered = false;
+
+    private SpriteRenderer sr;
+    private float speed;
     private Vector3 direction;
     private float angle;
-    public int attacksNumber;
 
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
         attacksNumber = Random.Range(1, 5);
-        speed = Random.Range(4.5f, 6f) / 100f;
+        speed = Random.Range(4.5f, 5.5f) / 100f;
     }
 
     void Update()
