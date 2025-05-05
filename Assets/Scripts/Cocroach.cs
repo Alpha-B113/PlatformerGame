@@ -4,7 +4,7 @@ public class Cocroach : MonoBehaviour
 {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
-    
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -13,7 +13,7 @@ public class Cocroach : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
