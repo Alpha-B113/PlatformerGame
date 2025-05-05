@@ -137,9 +137,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1312493076}
-  speed: 0.05
-  IsTriggered: 0
   attacksNumber: 0
+  IsTriggered: 0
 --- !u!4 &38227607 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6420790469552562547, guid: 4dd587e38c759fb4c80e03518430d6d2, type: 3}
@@ -1049,9 +1048,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1312493076}
-  speed: 0.05
-  IsTriggered: 0
   attacksNumber: 0
+  IsTriggered: 0
 --- !u!4 &478001314 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6420790469552562547, guid: 4dd587e38c759fb4c80e03518430d6d2, type: 3}
@@ -1654,9 +1652,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1312493076}
-  speed: 0.05
-  IsTriggered: 0
   attacksNumber: 0
+  IsTriggered: 0
 --- !u!4 &755004581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6420790469552562547, guid: 4dd587e38c759fb4c80e03518430d6d2, type: 3}
@@ -2606,9 +2603,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1312493076}
-  speed: 0.05
-  IsTriggered: 0
   attacksNumber: 0
+  IsTriggered: 0
 --- !u!4 &1147022238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6420790469552562547, guid: 4dd587e38c759fb4c80e03518430d6d2, type: 3}
@@ -3422,9 +3418,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1312493076}
-  speed: 0.05
-  IsTriggered: 0
   attacksNumber: 0
+  IsTriggered: 0
 --- !u!1 &1383610962 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1099817559773005661, guid: 4dd587e38c759fb4c80e03518430d6d2, type: 3}
@@ -3443,9 +3438,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1312493076}
-  speed: 0.05
-  IsTriggered: 0
   attacksNumber: 0
+  IsTriggered: 0
 --- !u!4 &1383610967 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6420790469552562547, guid: 4dd587e38c759fb4c80e03518430d6d2, type: 3}
@@ -3656,7 +3650,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -2.9708943, y: -2.9805765}
+  m_Offset: {x: -3.2054958, y: -2.9805765}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3666,7 +3660,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 7.656684, y: 1.038847}
+  m_Size: {x: 7.7348843, y: 1.038847}
   m_EdgeRadius: 0
 --- !u!1 &1572161471
 GameObject:
@@ -4213,7 +4207,7 @@ Transform:
   m_GameObject: {fileID: 1777543069}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.29, y: -6.39, z: 0}
+  m_LocalPosition: {x: -0.51549244, y: -6.39, z: 0}
   m_LocalScale: {x: 2.5625155, y: 2.5625155, z: 2.5625155}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4347,7 +4341,7 @@ Transform:
   m_GameObject: {fileID: 1829245731}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.785687, y: -6.0492, z: 0}
+  m_LocalPosition: {x: -13.111275, y: -6.0492, z: 0}
   m_LocalScale: {x: 1.7749362, y: 1.9089439, z: 1.7749362}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5019,9 +5013,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1312493076}
-  speed: 0.05
-  IsTriggered: 0
   attacksNumber: 0
+  IsTriggered: 0
 --- !u!4 &2102199570 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6420790469552562547, guid: 4dd587e38c759fb4c80e03518430d6d2, type: 3}

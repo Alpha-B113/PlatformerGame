@@ -15,7 +15,7 @@ public class BirdEnemy : MonoBehaviour
     {
         sr = GetComponent<SpriteRenderer>();
         attacksNumber = Random.Range(1, 5);
-        speed = Random.Range(4.5f, 5.5f) / 100f;
+        speed = Random.Range(3.5f, 4.0f) / 100f;
     }
 
     void Update()
