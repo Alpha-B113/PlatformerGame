@@ -12,6 +12,7 @@ TagManager:
   - EnemyBoundary
   - colisionApple0
   - EagleTrigger
+  - GoodApple
   layers:
   - Default
   - TransparentFX

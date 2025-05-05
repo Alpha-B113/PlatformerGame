@@ -67,6 +67,21 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             //ReloadSceneWithDelay(0.7f);
         }
+        
+        if (!isDied && collision.collider.CompareTag("CocroachEnemy"))
+        {
+            if (AppleCounter.appleCount == 0)
+            {
+                isDied = true;
+                animator.SetTrigger("TouchEnemy");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                //ReloadSceneWithDelay(0.7f);
+            }
+            else
+            {
+                AppleCounter.appleCount--;
+            }
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
