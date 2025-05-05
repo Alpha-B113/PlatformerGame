@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: e83e0ba97775500439222b9f1a28a710
+guid: 8538e8f22a34ce9a8991a62e66118b77
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7850549038632615195
-    second: "\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u04362-fotor-bg-remover-2025043005314_0"
-  - first:
-      213: 140183918102444547
-    second: "\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u04362-fotor-bg-remover-2025043005314_1"
-  - first:
-      213: -973301436713212447
-    second: "\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u04362-fotor-bg-remover-2025043005314_2"
-  - first:
-      213: -7879048593064565590
-    second: "\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u04362-fotor-bg-remover-2025043005314_3"
+      213: -7069039984507774050
+    second: normApple_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 60
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u04362-fotor-bg-remover-2025043005314_0"
+      name: normApple_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 4
-        width: 111
-        height: 245
+        y: 0
+        width: 30
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,74 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b1d3b73b1c0c2fc60800000000000000
-      internalID: 7850549038632615195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u04362-fotor-bg-remover-2025043005314_1"
-      rect:
-        serializedVersion: 2
-        x: 119
-        y: 3
-        width: 129
-        height: 241
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 30af7b1e78802f100800000000000000
-      internalID: 140183918102444547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u04362-fotor-bg-remover-2025043005314_2"
-      rect:
-        serializedVersion: 2
-        x: 255
-        y: 4
-        width: 113
-        height: 245
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1e5e45500832e72f0800000000000000
-      internalID: -973301436713212447
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u04362-fotor-bg-remover-2025043005314_3"
-      rect:
-        serializedVersion: 2
-        x: 383
-        y: 4
-        width: 117
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aa46852bc0ff7a290800000000000000
-      internalID: -7879048593064565590
+      spriteID: e9b91646699b5ed90800000000000000
+      internalID: -7069039984507774050
       vertices: []
       indices: 
       edges: []
@@ -223,10 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u04362-fotor-bg-remover-2025043005314_0": 7850549038632615195
-      "\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u04362-fotor-bg-remover-2025043005314_1": 140183918102444547
-      "\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u04362-fotor-bg-remover-2025043005314_2": -973301436713212447
-      "\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u04362-fotor-bg-remover-2025043005314_3": -7879048593064565590
+      normApple_0: -7069039984507774050
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
