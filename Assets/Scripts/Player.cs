@@ -1,19 +1,18 @@
 using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
     private float movingSpeed = 5f;
     private Animator animator;
     private bool isRunning;
     private bool isGrounded;
     private bool isDied;
     private SpriteRenderer sr;
-    private const string IS_RUNNING = "IsRunning"; // review: совсем не по кодстайлу. 
-    private const string IS_JUMPING = "IsJumping";
+    private const string IsRunning = "IsRunning";
+    private const string IsJumping = "IsJumping";
 
     private void Awake()
     {
@@ -25,22 +24,21 @@ public class Player : MonoBehaviour
     private void Update()
     {
         isRunning = false;
-        // review: почему бы не выделить метод CheckGrounded?
         if (rb.linearVelocity == Vector2.zero)
         {
-            isGrounded = true;
-            animator.SetBool(IS_JUMPING, false);
-        }
-        if (Input.GetKey(KeyCode.W) && isGrounded)
-        {
-            // review: почему бы не выделить метод Jump?
-            rb.AddForce(Vector2.up * 10.5f, ForceMode2D.Impulse);
-            rb.linearVelocityY = Math.Min(10.5f, rb.linearVelocityY);
-            animator.SetBool(IS_JUMPING, true);
-            isGrounded = false;
+            SetGrounded();
         }
 
-        // review: почему бы не выделить метод Move? MoveHorizontal?
+        if (Input.GetKey(KeyCode.W) && isGrounded)
+        {
+            Jump();
+        }
+
+        HorizontalMove();
+    }
+
+    private void HorizontalMove()
+    {
         var horizontalMove = Input.GetAxis("Horizontal") * movingSpeed;
 
         if (horizontalMove > 0.1)
@@ -48,21 +46,24 @@ public class Player : MonoBehaviour
         else if (horizontalMove < -0.1)
             sr.flipX = true;
 
-        isRunning = Mathf.Abs(horizontalMove) > 0.1 && isGrounded;
-
         rb.linearVelocity = new Vector2(horizontalMove, rb.linearVelocityY);
+        isRunning = Mathf.Abs(horizontalMove) > 0.1 && isGrounded;
+        animator.SetBool(IsRunning, isRunning);
+    }
 
-        animator.SetBool(IS_RUNNING, isRunning);
+    private void Jump()
+    {
+        rb.AddForce(Vector2.up * 10.5f, ForceMode2D.Impulse);
+        rb.linearVelocityY = Math.Min(10.5f, rb.linearVelocityY);
+        animator.SetBool(IsJumping, true);
+        isGrounded = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Ground"))
         {
-            // review: Мне кажется, что стоит выделить метод SetGrounded(bool is grounded), чтобы в одном месте изменять эти две переменные.
-            // А сейчас эта логика разнесена по разным местам => легко ошибиться при добавлении функциональности
-            animator.SetBool(IS_JUMPING, false);
-            isGrounded = true;
+            SetGrounded();
         }
 
         if (!isDied && collision.collider.CompareTag("Enemy"))
@@ -70,9 +71,8 @@ public class Player : MonoBehaviour
             isDied = true;
             animator.SetTrigger("TouchEnemy");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            //ReloadSceneWithDelay(0.7f);
         }
-        
+
         if (!isDied && collision.collider.CompareTag("CocroachEnemy"))
         {
             if (AppleCounter.appleCount == 0)
@@ -80,7 +80,6 @@ public class Player : MonoBehaviour
                 isDied = true;
                 animator.SetTrigger("TouchEnemy");
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                //ReloadSceneWithDelay(0.7f);
             }
             else
             {
@@ -97,15 +96,9 @@ public class Player : MonoBehaviour
         }
     }
 
-    // review: почему эта логика в игроке?
-    public void ReloadSceneWithDelay(float delayInSeconds)
+    private void SetGrounded()
     {
-        StartCoroutine(ReloadSceneCoroutine(delayInSeconds));
-    }
-
-    private IEnumerator ReloadSceneCoroutine(float delayInSeconds)
-    {
-        yield return new WaitForSeconds(delayInSeconds);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        animator.SetBool(IsJumping, false);
+        isGrounded = true;
     }
 }

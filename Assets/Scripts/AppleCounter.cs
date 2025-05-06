@@ -9,11 +9,7 @@ public class AppleCounter : MonoBehaviour
     public TextMeshProUGUI appleCounter;
     // review: почему такой кодстайл? Почему свойство? Можно ли сделать не статическим? Я почти уверен, что такой код подталкивает к изменению состояния этого объекта извне
     public static int appleCount { get; set; }
-    
-    private void Awake()
-    {
-        appleCount = 0;
-    }
+
     void Update()
     {
         appleCounter.text = appleCount.ToString();

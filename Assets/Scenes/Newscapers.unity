@@ -137,8 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1312493076}
-  attacksNumber: 0
-  IsTriggered: 0
+  Trigger: {fileID: 1512137298}
 --- !u!4 &38227607 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6420790469552562547, guid: 4dd587e38c759fb4c80e03518430d6d2, type: 3}
@@ -1047,8 +1046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1312493076}
-  attacksNumber: 0
-  IsTriggered: 0
+  Trigger: {fileID: 1302294686}
 --- !u!4 &478001314 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6420790469552562547, guid: 4dd587e38c759fb4c80e03518430d6d2, type: 3}
@@ -1650,8 +1648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1312493076}
-  attacksNumber: 0
-  IsTriggered: 0
+  Trigger: {fileID: 743700021}
 --- !u!4 &755004581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6420790469552562547, guid: 4dd587e38c759fb4c80e03518430d6d2, type: 3}
@@ -2601,8 +2598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1312493076}
-  attacksNumber: 0
-  IsTriggered: 0
+  Trigger: {fileID: 175343644}
 --- !u!4 &1147022238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6420790469552562547, guid: 4dd587e38c759fb4c80e03518430d6d2, type: 3}
@@ -3413,8 +3409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1312493076}
-  attacksNumber: 0
-  IsTriggered: 0
+  Trigger: {fileID: 1758481215}
 --- !u!1 &1383610962 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1099817559773005661, guid: 4dd587e38c759fb4c80e03518430d6d2, type: 3}
@@ -3433,8 +3428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1312493076}
-  attacksNumber: 0
-  IsTriggered: 0
+  Trigger: {fileID: 1155352973}
 --- !u!4 &1383610967 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6420790469552562547, guid: 4dd587e38c759fb4c80e03518430d6d2, type: 3}
@@ -5050,8 +5044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1312493076}
-  attacksNumber: 0
-  IsTriggered: 0
+  Trigger: {fileID: 1269985681}
 --- !u!4 &2102199570 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6420790469552562547, guid: 4dd587e38c759fb4c80e03518430d6d2, type: 3}

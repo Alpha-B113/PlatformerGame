@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RunningEnemy : MonoBehaviour
 {
-    public Vector2 direction = new(-0.1f, 0);
+    private Vector2 direction = new(-0.1f, 0);
     private Rigidbody2D rb;
     private SpriteRenderer sr;
 

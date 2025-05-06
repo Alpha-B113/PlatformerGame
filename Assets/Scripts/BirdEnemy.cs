@@ -3,10 +3,8 @@ using UnityEngine;
 
 public class BirdEnemy : MonoBehaviour
 {
-    // review: почему публичные поля, а не свойства?
     public Transform Player;
-    public int attacksNumber; // перевести в подписку на события
-    public bool IsTriggered = false;
+    public BirdTrigger Trigger;
 
     private SpriteRenderer sr;
     private float speed;
@@ -16,13 +14,12 @@ public class BirdEnemy : MonoBehaviour
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        attacksNumber = Random.Range(1, 5);
         speed = Random.Range(3.5f, 4.0f) / 100f;
     }
 
     void Update()
     {
-        if (IsTriggered)
+        if (Trigger.IsTriggered)
         {
             transform.position = Vector2.MoveTowards(transform.position, Player.position, speed);
             direction = (Player.position - transform.position).normalized;
@@ -37,15 +34,6 @@ public class BirdEnemy : MonoBehaviour
     {
         transform.rotation = Quaternion.Euler(0, 0, angle);
         sr.flipX = true;
-        // review: sr.flipY = Math.Cos(angle * Math.PI / 180) < 0; не подойдет?
-        // if (0 <= angle && angle <= 90)
-        //     sr.flipY = false;
-        // else if (90 <= angle && angle <= 180)
-        //     sr.flipY = true;
-        // else if (-90 <= angle && angle <= 0)
-        //     sr.flipY = false;
-        // else
-        //     sr.flipY = true;
         sr.flipY = Mathf.Cos(angle * Mathf.PI / 180) < 0;
     }
 }

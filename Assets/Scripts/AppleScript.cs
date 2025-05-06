@@ -1,10 +1,9 @@
 using UnityEngine;
-using System.Collections.Generic;
 
-// review: чем он норм?
-public class NormAppleScript : MonoBehaviour
+public class AppleScript : MonoBehaviour
 {
     private Rigidbody2D rb;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();

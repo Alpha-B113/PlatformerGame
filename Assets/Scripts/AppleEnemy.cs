@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class appleEnemy : MonoBehaviour // review: имя класса же с заглавной буквы
+public class AppleEnemy : MonoBehaviour
 {
     [SerializeField] public List<GameObject> cocroaches = new List<GameObject>();
     private Rigidbody2D rb;

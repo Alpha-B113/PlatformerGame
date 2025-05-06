@@ -4,11 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class BananaEnemy : MonoBehaviour
 {
-    [Tooltip("Угол поворота (например, 90 градусов)")]
-    [SerializeField] private float fallAngle = 90f;
-
-    [Tooltip("Скорость поворота")]
-    [SerializeField] private float rotationSpeed = 360f;
+    private float fallAngle = 90f;
+    private float rotationSpeed = 360f;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
