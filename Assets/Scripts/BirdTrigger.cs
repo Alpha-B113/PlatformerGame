@@ -4,7 +4,7 @@ using UnityEngine;
 // только предоставлял событие, а BirdEnemy уже бы на него подписывалось?
 public class BirdTrigger : MonoBehaviour
 {
-    public BirdEnemy Bird; // review: почему не свойство?
+    public BirdEnemy Bird { get; set; } // review: почему не свойство?
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

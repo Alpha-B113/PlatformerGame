@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5edb65ac-8335-4121-b38b-0d0fc4cdc47d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/персонаж2-fotor-bg-remover-2025043005314.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/персонаж2-fotor-bg-remover-2025043005314.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RunningEnemy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RunningEnemy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AppleEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AppleEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BananaEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BananaEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BirdEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BirdEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BirdTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BirdTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RatEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RatEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Banana.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Banana.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/магнитофон-fotor-bg-remover-20250505222738.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/магнитофон-fotor-bg-remover-20250505222738.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/нота.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/нота.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,9 +29,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2wg2irMyFmzDiOwrm1kTBfFTcZl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,6 +43,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -92,6 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746449027935</updated>
       <workItem from="1746449029688" duration="27000" />
+      <workItem from="1746507300091" duration="1326000" />
     </task>
     <servers />
   </component>

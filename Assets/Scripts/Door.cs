@@ -9,23 +9,23 @@ public class Door : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTrigger(Collider2D other, string trueEvent, string falseEvent)
     {
         if (other.CompareTag("Player"))
         {
-            animator.SetBool("isClosing", false);
-            animator.SetBool("isOpening", true);
+            animator.SetBool(falseEvent, false);
+            animator.SetBool(trueEvent, true);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        OnTrigger(other, "isOpening", "isClosing" );
     }
 
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
-        {
-            // review: код дублируется
-            animator.SetBool("isClosing", true);
-            animator.SetBool("isOpening", false);
-        }
+        OnTrigger(other, "isClosing", "isOpening" );
     }
 }

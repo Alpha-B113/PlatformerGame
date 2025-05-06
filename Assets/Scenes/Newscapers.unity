@@ -662,7 +662,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71d27812eb942af4092656b17c3de933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bird: {fileID: 1147022234}
 --- !u!61 &175343645
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1506,7 +1505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71d27812eb942af4092656b17c3de933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bird: {fileID: 755004577}
 --- !u!61 &743700022
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2655,7 +2653,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71d27812eb942af4092656b17c3de933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bird: {fileID: 1383610963}
 --- !u!61 &1155352974
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3016,7 +3013,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71d27812eb942af4092656b17c3de933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bird: {fileID: 2102199566}
 --- !u!61 &1269985682
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3108,7 +3104,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71d27812eb942af4092656b17c3de933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bird: {fileID: 478001310}
 --- !u!61 &1302294687
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3615,7 +3610,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71d27812eb942af4092656b17c3de933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bird: {fileID: 38227603}
 --- !u!61 &1512137299
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4032,7 +4026,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71d27812eb942af4092656b17c3de933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bird: {fileID: 1377821245}
 --- !u!61 &1758481216
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4224,6 +4217,7 @@ GameObject:
   - component: {fileID: 1829245734}
   - component: {fileID: 1829245733}
   - component: {fileID: 1829245732}
+  - component: {fileID: 1829245735}
   m_Layer: 0
   m_Name: "\u0417\u0434\u0430\u043D\u0438\u0435 3_0 (1)"
   m_TagString: Ground
@@ -4347,6 +4341,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1829245735
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829245731}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.5075473, y: 1.7939788}
+  - {x: 1.489216, y: -2.461949}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1872409750
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BananaPeel : MonoBehaviour
+public class BananaEnemy : MonoBehaviour
 {
     [Tooltip("Угол поворота (например, 90 градусов)")]
     [SerializeField] private float fallAngle = 90f;
