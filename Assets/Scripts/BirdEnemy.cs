@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class BirdEnemy : MonoBehaviour
 {
+    // review: почему публичные поля, а не свойства?
     public Transform Player;
-    public int attacksNumber;
+    public int attacksNumber; // review: переменная не используется
     public bool IsTriggered = false;
 
     private SpriteRenderer sr;
@@ -35,6 +36,7 @@ public class BirdEnemy : MonoBehaviour
     {
         transform.rotation = Quaternion.Euler(0, 0, angle);
         sr.flipX = true;
+        // review: sr.flipY = Math.Cos(angle * Math.PI / 180) < 0; не подойдет?
         if (0 <= angle && angle <= 90)
             sr.flipY = false;
         else if (90 <= angle && angle <= 180)
