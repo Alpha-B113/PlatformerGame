@@ -1,9 +1,9 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class appleEnemy : MonoBehaviour
+public class appleEnemy : MonoBehaviour // review: имя класса же с заглавной буквы
 {
-    private Rigidbody2D rb;
+    private Rigidbody2D rb; // review: кажется, порядок переменных не совсем верный
 
     [SerializeField] public List<GameObject> cocroaches = new List<GameObject>();
 
@@ -16,7 +16,7 @@ public class appleEnemy : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
-            gameObject.SetActive(false);
+            gameObject.SetActive(false); // review: может, стоит вообще удалять объект?
             foreach (var cocroach in cocroaches)
             {
                 cocroach.SetActive(true);

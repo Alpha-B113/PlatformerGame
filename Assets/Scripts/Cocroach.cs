@@ -16,6 +16,7 @@ public class Cocroach : MonoBehaviour
 
     }
 
+    // review: это как будто бы лучше было сделать событием, а AppleCounter уже внутри себя бы изменял состояние
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Player"))

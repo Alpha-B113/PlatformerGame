@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     private bool isGrounded;
     private bool isDied;
     private SpriteRenderer sr;
-    private const string IS_RUNNING = "IsRunning";
+    private const string IS_RUNNING = "IsRunning"; // review: совсем не по кодстайлу. 
     private const string IS_JUMPING = "IsJumping";
 
     private void Awake()
@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
     private void Update()
     {
         isRunning = false;
+        // review: почему бы не выделить метод CheckGrounded?
         if (rb.linearVelocity == Vector2.zero)
         {
             isGrounded = true;
@@ -32,12 +33,14 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.W) && isGrounded)
         {
+            // review: почему бы не выделить метод Jump?
             rb.AddForce(Vector2.up * 10.5f, ForceMode2D.Impulse);
             rb.linearVelocityY = Math.Min(10.5f, rb.linearVelocityY);
             animator.SetBool(IS_JUMPING, true);
             isGrounded = false;
         }
 
+        // review: почему бы не выделить метод Move? MoveHorizontal?
         var horizontalMove = Input.GetAxis("Horizontal") * movingSpeed;
 
         if (horizontalMove > 0.1)
@@ -56,6 +59,8 @@ public class Player : MonoBehaviour
     {
         if (collision.collider.CompareTag("Ground"))
         {
+            // review: Мне кажется, что стоит выделить метод SetGrounded(bool is grounded), чтобы в одном месте изменять эти две переменные.
+            // А сейчас эта логика разнесена по разным местам => легко ошибиться при добавлении функциональности
             animator.SetBool(IS_JUMPING, false);
             isGrounded = true;
         }
@@ -92,6 +97,7 @@ public class Player : MonoBehaviour
         }
     }
 
+    // review: почему эта логика в игроке?
     public void ReloadSceneWithDelay(float delayInSeconds)
     {
         StartCoroutine(ReloadSceneCoroutine(delayInSeconds));

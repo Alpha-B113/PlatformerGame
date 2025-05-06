@@ -23,6 +23,7 @@ public class Door : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            // review: код дублируется
             animator.SetBool("isClosing", true);
             animator.SetBool("isOpening", false);
         }

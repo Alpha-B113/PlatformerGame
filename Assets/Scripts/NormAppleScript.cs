@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+// review: чем он норм?
 public class NormAppleScript : MonoBehaviour
 {
     private Rigidbody2D rb;
