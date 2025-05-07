@@ -14,6 +14,7 @@ TagManager:
   - EagleTrigger
   - GoodApple
   - CocroachEnemy
+  - Gas
   layers:
   - Default
   - TransparentFX

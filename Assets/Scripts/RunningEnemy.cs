@@ -24,5 +24,9 @@ public class RunningEnemy : MonoBehaviour
             direction.x *= -1;
             sr.flipX ^= true;
         }
+        else if (other.CompareTag("Gas"))
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

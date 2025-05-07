@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public bool LooksLeft => sr.flipX;
+    public bool LooksRight => !sr.flipX;
     private Rigidbody2D rb;
     private float movingSpeed = 5f;
     private Animator animator;
@@ -36,6 +38,10 @@ public class Player : MonoBehaviour
 
         HorizontalMove();
     }
+
+
+
+
 
     private void HorizontalMove()
     {
@@ -71,20 +77,6 @@ public class Player : MonoBehaviour
             isDied = true;
             animator.SetTrigger("TouchEnemy");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-
-        if (!isDied && collision.collider.CompareTag("CocroachEnemy"))
-        {
-            if (AppleCounter.appleCount == 0)
-            {
-                isDied = true;
-                animator.SetTrigger("TouchEnemy");
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            }
-            else
-            {
-                AppleCounter.appleCount--;
-            }
         }
     }
 

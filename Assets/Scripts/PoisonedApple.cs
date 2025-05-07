@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class AppleEnemy : MonoBehaviour
+public class PoisonedApple : MonoBehaviour
 {
     [SerializeField] public List<GameObject> cocroaches = new List<GameObject>();
     private Rigidbody2D rb;
