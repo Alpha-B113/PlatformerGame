@@ -17,11 +17,10 @@ public class BananaEnemy : MonoBehaviour
 
     private IEnumerator FallAndRecover(Transform playerTransform)
     {
-        Quaternion startRotation = playerTransform.rotation;
-        Quaternion targetRotation = startRotation * Quaternion.Euler(0, 0, fallAngle);
+        var startRotation = playerTransform.rotation;
+        var targetRotation = startRotation * Quaternion.Euler(0, 0, fallAngle);
+        var elapsed = 0f;
 
-
-        float elapsed = 0f;
         while (elapsed < 1f)
         {
             elapsed += Time.deltaTime * (rotationSpeed / 100f);
