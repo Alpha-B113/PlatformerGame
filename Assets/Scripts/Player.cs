@@ -48,8 +48,7 @@ public class Player : MonoBehaviour
         isRunning = Mathf.Abs(horizontalMove) > 0.1 && isGrounded;
         animator.SetBool(IsRunning, isRunning);
 
-        var hit = Physics2D.Raycast(rb.position, Vector2.down, rayDistance, LayerMask.GetMask("Ground"));
-        isGrounded = hit.collider != null;
+        isGrounded = IsGrounded();
         if (isGrounded)
             animator.SetBool(IsJumping, false);
     }
@@ -68,5 +67,24 @@ public class Player : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+    }
+
+    private bool IsGrounded()
+    {
+        var position = rb.position;
+        var raycasts = new Vector2[]
+        {
+            position,
+            position + new Vector2(-0.3f, 0),
+            position + new Vector2(0.3f, 0)
+        };
+
+        foreach (var point in raycasts)
+        {
+            var hit = Physics2D.Raycast(point, Vector2.down, rayDistance, LayerMask.GetMask("Ground"));
+            if (hit.collider != null)
+                return true;
+        }
+        return false;
     }
 }
