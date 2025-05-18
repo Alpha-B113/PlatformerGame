@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: 9b072f2ea15ac7d47bdcd115882689da
+guid: fe37b354ff8b1d0aa93e59098f66af79
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2807015886944449910
-    second: "\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u04362-idle-no-bg-preview
-      (carve.photos)_0"
+      213: 4589925243270540400
+    second: playerStays_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 75
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -114,14 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u04362-idle-no-bg-preview
-        (carve.photos)_0"
+      name: playerStays_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 6
-        width: 88
-        height: 184
+        y: 0
+        width: 14
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a8a4ccb4ce97b09d0800000000000000
-      internalID: -2807015886944449910
+      spriteID: 07c2db6b0b0b2bf30800000000000000
+      internalID: 4589925243270540400
       vertices: []
       indices: 
       edges: []
@@ -150,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u04362-idle-no-bg-preview (carve.photos)_0": -2807015886944449910
+      playerStays_0: 4589925243270540400
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
