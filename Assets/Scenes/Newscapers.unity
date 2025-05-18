@@ -756,7 +756,7 @@ GameObject:
   - component: {fileID: 415451949}
   - component: {fileID: 415451948}
   - component: {fileID: 415451950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "\u0417\u0434\u0430\u043D\u0438\u04352-fotor-bg-remover-2025040711253_0"
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -867,7 +867,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.19922984}
+  m_Offset: {x: 0, y: -0.0055453777}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -877,7 +877,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.71, y: 4.3115406}
+  m_Size: {x: 1.71, y: 4.6989093}
   m_EdgeRadius: 0
 --- !u!1001 &452355547
 PrefabInstance:
@@ -2142,7 +2142,7 @@ GameObject:
   - component: {fileID: 973403125}
   - component: {fileID: 973403124}
   - component: {fileID: 973403123}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "\u0437\u0434\u0430\u043D\u0438\u0435-fotor-bg-remover-2025042512732_0"
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2183,7 +2183,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.029808909, y: -0.34619546}
+  m_Offset: {x: 0.029808879, y: -0.18758976}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2193,7 +2193,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.9971087, y: 3.3376093}
+  m_Size: {x: 1.9971087, y: 3.6548207}
   m_EdgeRadius: 0
 --- !u!212 &973403124
 SpriteRenderer:
@@ -3592,7 +3592,7 @@ GameObject:
   - component: {fileID: 1572161474}
   - component: {fileID: 1572161473}
   - component: {fileID: 1572161472}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "\u0417\u0434\u0430\u043D\u0438\u0435-fotor-bg-remover-202504071658_0 (1)"
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3633,7 +3633,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.27847302}
+  m_Offset: {x: 0, y: -0.009513259}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3643,7 +3643,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.44, y: 3.8130538}
+  m_Size: {x: 4.44, y: 4.350973}
   m_EdgeRadius: 0
 --- !u!212 &1572161473
 SpriteRenderer:
@@ -4065,7 +4065,7 @@ GameObject:
   - component: {fileID: 1777543072}
   - component: {fileID: 1777543071}
   - component: {fileID: 1777543070}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "\u0437\u0434\u0430\u043D\u0438\u04352-fotor-bg-remover-202504251402_0"
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4106,7 +4106,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.16409457}
+  m_Offset: {x: 0, y: -0.010497212}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4116,7 +4116,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.3, y: 3.201811}
+  m_Size: {x: 3.3, y: 3.5090058}
   m_EdgeRadius: 0
 --- !u!212 &1777543071
 SpriteRenderer:
@@ -4200,7 +4200,7 @@ GameObject:
   - component: {fileID: 1829245733}
   - component: {fileID: 1829245732}
   - component: {fileID: 1829245735}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "\u0417\u0434\u0430\u043D\u0438\u0435 3_0 (1)"
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4622,7 +4622,7 @@ GameObject:
   - component: {fileID: 2037541966}
   - component: {fileID: 2037541965}
   - component: {fileID: 2037541964}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "\u0417\u0434\u0430\u043D\u0438\u04352-fotor-bg-remover-2025040711253_0
     (1)"
   m_TagString: Ground
@@ -4664,7 +4664,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.20326573}
+  m_Offset: {x: 0, y: -0.012818813}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4674,7 +4674,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.71, y: 4.3034687}
+  m_Size: {x: 1.71, y: 4.6843624}
   m_EdgeRadius: 0
 --- !u!212 &2037541965
 SpriteRenderer:
@@ -4757,7 +4757,7 @@ GameObject:
   - component: {fileID: 2076667004}
   - component: {fileID: 2076667003}
   - component: {fileID: 2076667005}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "\u0417\u0434\u0430\u043D\u0438\u0435-fotor-bg-remover-202504071658_0"
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4868,7 +4868,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.22566855}
+  m_Offset: {x: 0, y: -0.01515615}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4878,7 +4878,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.44, y: 3.9186628}
+  m_Size: {x: 4.44, y: 4.3396873}
   m_EdgeRadius: 0
 --- !u!1 &2084783515
 GameObject:
@@ -4891,7 +4891,7 @@ GameObject:
   - component: {fileID: 2084783518}
   - component: {fileID: 2084783517}
   - component: {fileID: 2084783516}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "\u0417\u0434\u0430\u043D\u0438\u0435 3_0"
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4932,7 +4932,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.21158755}
+  m_Offset: {x: 0, y: 0.002342105}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4942,7 +4942,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.43, y: 4.491825}
+  m_Size: {x: 3.43, y: 4.9196844}
   m_EdgeRadius: 0
 --- !u!212 &2084783517
 SpriteRenderer:
@@ -5180,8 +5180,8 @@ SceneRoots:
   - {fileID: 1872409751}
   - {fileID: 78980829}
   - {fileID: 397891259}
-  - {fileID: 1192294151}
   - {fileID: 1304618503}
   - {fileID: 486545130}
+  - {fileID: 1192294151}
   - {fileID: 1433948552}
   - {fileID: 1670934234}
