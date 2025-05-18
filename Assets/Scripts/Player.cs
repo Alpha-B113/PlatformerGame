@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer sr;
     private const string IsRunning = "IsRunning";
     private const string IsJumping = "IsJumping";
+    private float rayDistance = 1f;
 
     private void Awake()
     {
@@ -26,11 +27,6 @@ public class Player : MonoBehaviour
     private void Update()
     {
         isRunning = false;
-        if (rb.linearVelocity == Vector2.zero)
-        {
-            SetGrounded();
-        }
-
         if (Input.GetKey(KeyCode.W) && isGrounded)
         {
             Jump();
@@ -38,10 +34,6 @@ public class Player : MonoBehaviour
 
         HorizontalMove();
     }
-
-
-
-
 
     private void HorizontalMove()
     {
@@ -55,6 +47,11 @@ public class Player : MonoBehaviour
         rb.linearVelocity = new Vector2(horizontalMove, rb.linearVelocityY);
         isRunning = Mathf.Abs(horizontalMove) > 0.1 && isGrounded;
         animator.SetBool(IsRunning, isRunning);
+
+        var hit = Physics2D.Raycast(rb.position, Vector2.down, rayDistance, LayerMask.GetMask("Ground"));
+        isGrounded = hit.collider != null;
+        if (isGrounded)
+            animator.SetBool(IsJumping, false);
     }
 
     private void Jump()
@@ -67,30 +64,9 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Ground"))
-        {
-            SetGrounded();
-        }
-
         if (!isDied && collision.collider.CompareTag("Enemy"))
         {
-            isDied = true;
-            animator.SetTrigger("TouchEnemy");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Ground"))
-        {
-            isGrounded = false;
-        }
-    }
-
-    private void SetGrounded()
-    {
-        animator.SetBool(IsJumping, false);
-        isGrounded = true;
     }
 }
