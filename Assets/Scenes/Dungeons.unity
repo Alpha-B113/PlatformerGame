@@ -311,6 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 1978462132}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &58147820
 BoxCollider2D:
@@ -565,6 +566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 1978462132}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &87212547
 BoxCollider2D:
@@ -1034,6 +1036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 1978462132}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &126088436
 BoxCollider2D:
@@ -1406,6 +1409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 0}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &225484093
 BoxCollider2D:
@@ -2202,6 +2206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 1978462132}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &378506281
 BoxCollider2D:
@@ -2734,6 +2739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 1978462132}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &550275757
 BoxCollider2D:
@@ -3096,6 +3102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 1978462132}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &655049378
 BoxCollider2D:
@@ -3684,11 +3691,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2213391224823265082, guid: a9adae7cce243bf7e87a6ce097ef5911, type: 3}
   m_PrefabInstance: {fileID: 1244654239}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &923339711 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7698639322602871009, guid: 48a75f6d8ab32224ab4e83263186f92b, type: 3}
-  m_PrefabInstance: {fileID: 5735204158631151767}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &933551288
 GameObject:
   m_ObjectHideFlags: 0
@@ -4097,6 +4099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 0}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &1036254015
 BoxCollider2D:
@@ -4386,6 +4389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 1978462132}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &1075922463
 BoxCollider2D:
@@ -4519,6 +4523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 0}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &1079008782
 BoxCollider2D:
@@ -4721,6 +4726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 1978462132}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &1112576593
 BoxCollider2D:
@@ -4944,6 +4950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 1978462132}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &1160035445
 BoxCollider2D:
@@ -5440,6 +5447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 1978462132}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &1236370263
 BoxCollider2D:
@@ -6114,6 +6122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 1978462132}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &1424818376
 BoxCollider2D:
@@ -7396,6 +7405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 1978462132}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &1748235859
 BoxCollider2D:
@@ -7758,6 +7768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 1978462132}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &1829306155
 BoxCollider2D:
@@ -7906,6 +7917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 1978462132}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &1837611998
 BoxCollider2D:
@@ -8339,6 +8351,53 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2213391224823265082, guid: a9adae7cce243bf7e87a6ce097ef5911, type: 3}
   m_PrefabInstance: {fileID: 692682006}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1978462131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1978462133}
+  - component: {fileID: 1978462132}
+  m_Layer: 0
+  m_Name: AnimatorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1978462132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978462131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b969a5418fc9d4a918114aec22f4df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1042719789536820061}
+  playerController: {fileID: 9100000, guid: efee89c62a6225d4b9a2232abb16b7fe, type: 2}
+  playerWithGasSprayController: {fileID: 22100000, guid: ff8649371e2b06448bef7c8b9bd1faa9, type: 2}
+--- !u!4 &1978462133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978462131}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -33.035183, y: -5.2779675, z: 0.011401205}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1993443504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12891,6 +12950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 0}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &2068306987
 BoxCollider2D:
@@ -13269,6 +13329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197872ab3a7ae91688eebc27516007e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimatorManager: {fileID: 1978462132}
   gasCounterDisplay: {fileID: 2118956788}
 --- !u!61 &2125874386
 BoxCollider2D:
@@ -13454,20 +13515,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5634855565112633129, guid: 48a75f6d8ab32224ab4e83263186f92b, type: 3}
   m_PrefabInstance: {fileID: 5735204158631151767}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1042719789536820064
+--- !u!114 &1042719789536820061 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8825534157616290627, guid: 48a75f6d8ab32224ab4e83263186f92b, type: 3}
+  m_PrefabInstance: {fileID: 5735204158631151767}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 923339711}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7b969a5418fc9d4a918114aec22f4df, type: 3}
+  m_Script: {fileID: 11500000, guid: d2e9c6ad869718f4d83bdc90e9f66815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 9100000, guid: efee89c62a6225d4b9a2232abb16b7fe, type: 2}
-  playerWithGasSprayController: {fileID: 22100000, guid: ff8649371e2b06448bef7c8b9bd1faa9, type: 2}
 --- !u!1001 &5735204158631151767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13517,17 +13575,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5898827545179244707, guid: 48a75f6d8ab32224ab4e83263186f92b, type: 3}
-      propertyPath: m_Sprite
-      value: 
+      propertyPath: m_Size.x
+      value: 1.32
       objectReference: {fileID: 0}
     - target: {fileID: 5898827545179244707, guid: 48a75f6d8ab32224ab4e83263186f92b, type: 3}
+      propertyPath: m_Size.y
+      value: 2.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 5898827545179244707, guid: 48a75f6d8ab32224ab4e83263186f92b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5413371066138877886, guid: 13420c3523143644c8a309b8ee53e5b7, type: 3}
+    - target: {fileID: 5898827545179244707, guid: 48a75f6d8ab32224ab4e83263186f92b, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5898827545179244707, guid: 48a75f6d8ab32224ab4e83263186f92b, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7249349405474053152, guid: 48a75f6d8ab32224ab4e83263186f92b, type: 3}
+      propertyPath: AnimatorManager
+      value: 
+      objectReference: {fileID: 1978462132}
+    - target: {fileID: 7249349405474053152, guid: 48a75f6d8ab32224ab4e83263186f92b, type: 3}
+      propertyPath: playerAnimatorManager
+      value: 
+      objectReference: {fileID: 1978462132}
     - target: {fileID: 7698639322602871009, guid: 48a75f6d8ab32224ab4e83263186f92b, type: 3}
       propertyPath: m_Name
       value: Player 1 1
@@ -13539,14 +13613,11 @@ PrefabInstance:
     - target: {fileID: 8853581742088560692, guid: 48a75f6d8ab32224ab4e83263186f92b, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 22100000, guid: ff8649371e2b06448bef7c8b9bd1faa9, type: 2}
+      objectReference: {fileID: 9100000, guid: efee89c62a6225d4b9a2232abb16b7fe, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7698639322602871009, guid: 48a75f6d8ab32224ab4e83263186f92b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1042719789536820064}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48a75f6d8ab32224ab4e83263186f92b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -13562,3 +13633,4 @@ SceneRoots:
   - {fileID: 2068306989}
   - {fileID: 1036254017}
   - {fileID: 225484095}
+  - {fileID: 1978462133}
