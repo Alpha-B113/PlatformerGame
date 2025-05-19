@@ -3,20 +3,18 @@ using UnityEngine;
 public class GasSprayShooter : MonoBehaviour
 {
     public Player Player;
+    public PlayerAnimatorManager playerAnimatorManager;
     public GameObject gas;
     private float shootForce = 5f;
     private SpriteRenderer gasSr;
-    private SpriteRenderer gunSr;
     private Animator gasAnimator;
     private Rigidbody2D gasRb;
     private float disappearTime = 1f;
     private bool isShooting;
     private Vector2 shootDirection;
 
-
     private void Awake()
     {
-        gunSr = GetComponent<SpriteRenderer>();
         gasSr = gas.GetComponent<SpriteRenderer>();
         gasAnimator = gas.GetComponent<Animator>();
         gasRb = gas.GetComponent<Rigidbody2D>();
@@ -29,10 +27,9 @@ public class GasSprayShooter : MonoBehaviour
         {
             isShooting = true;
             GasSpray.GasSprayCount--;
+            playerAnimatorManager.TryChangeController();
             ShootGas();
         }
-
-        gunSr.enabled = GasSpray.GasSprayCount > 0;
 
         if (Player.LooksRight)
         {

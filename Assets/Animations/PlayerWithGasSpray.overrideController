@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PlayerWithGasSpray
+  m_Controller: {fileID: 9100000, guid: efee89c62a6225d4b9a2232abb16b7fe, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b0609462559cd6a43ad558751d6f7055, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 631d406fe736a7848a5a225aea9ae4b5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: cb53bc5e941675046bc1252d647f34c6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 85033fa35f7db8a4baacefe6d09b968d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f024a0bf03a4b0141933a5046bcb4880, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4f1a113d9ef245646a78a312f639f114, type: 2}

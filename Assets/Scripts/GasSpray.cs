@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class GasSpray : MonoBehaviour
 {
+    public PlayerAnimatorManager playerAnimatorManager;
     public TextMeshProUGUI gasCounterDisplay;
     public static int GasSprayCount;
     private BoxCollider2D bc;
@@ -26,6 +27,7 @@ public class GasSpray : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             GasSprayCount++;
+            playerAnimatorManager.TryChangeController();
             bc.enabled = false;
             sr.enabled = false;
         }
