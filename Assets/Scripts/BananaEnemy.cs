@@ -12,11 +12,11 @@ public class BananaEnemy : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            StartCoroutine(FallAndRecover(other.transform));
+            StartCoroutine(Fall(other.transform));
         }
     }
 
-    private IEnumerator FallAndRecover(Transform playerTransform)
+    private IEnumerator Fall(Transform playerTransform)
     {
         var startRotation = playerTransform.rotation;
         var targetRotation = startRotation * Quaternion.Euler(0, 0, fallAngle);

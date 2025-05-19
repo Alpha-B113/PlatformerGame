@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     public bool LooksLeft => sr.flipX;
     public bool LooksRight => !sr.flipX;
+    public bool IsPushed;
     private Rigidbody2D rb;
     private float movingSpeed = 5f;
     private Animator animator;
@@ -26,6 +27,9 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if (IsPushed)
+            return;
+
         isRunning = false;
         if (Input.GetKey(KeyCode.W) && isGrounded)
         {
