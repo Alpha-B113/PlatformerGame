@@ -22,7 +22,6 @@ public class PlayerAnimatorManager : MonoBehaviour
         if (IsNowCorrectController())
             return;
 
-        Debug.Log("I am here");
         if (animator.runtimeAnimatorController == playerController)
             animator.runtimeAnimatorController = playerWithGasSprayController;
         else
