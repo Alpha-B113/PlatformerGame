@@ -14,9 +14,9 @@ public class PoisonedApple : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
-            foreach (var cocroach in cocroaches)
+            foreach (var cockroach in cocroaches)
             {
-                cocroach.SetActive(true);
+                cockroach.SetActive(true);
             }
             Destroy(gameObject);
         }

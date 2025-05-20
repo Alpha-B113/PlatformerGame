@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Cocroach : MonoBehaviour
+public class Cockroach : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {

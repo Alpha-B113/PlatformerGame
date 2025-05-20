@@ -6,15 +6,15 @@ public class GasSpray : MonoBehaviour
     public PlayerAnimatorManager playerAnimatorManager;
     public TextMeshProUGUI gasCounterDisplay;
     public static int GasSprayCount;
-    private BoxCollider2D bc;
-    private SpriteRenderer sr;
+    private BoxCollider2D boxCollider;
+    private SpriteRenderer spriteRenderer;
 
 
     private void Awake()
     {
         GasSprayCount = 0;
-        sr = GetComponent<SpriteRenderer>();
-        bc = GetComponent<BoxCollider2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     private void Update()
@@ -28,8 +28,8 @@ public class GasSpray : MonoBehaviour
         {
             GasSprayCount++;
             playerAnimatorManager.TryChangeController();
-            bc.enabled = false;
-            sr.enabled = false;
+            boxCollider.enabled = false;
+            spriteRenderer.enabled = false;
         }
     }
 }

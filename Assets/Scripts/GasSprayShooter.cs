@@ -13,6 +13,11 @@ public class GasSprayShooter : MonoBehaviour
     private bool isShooting;
     private Vector2 shootDirection;
 
+    private void Start()
+    {
+        Invoke(nameof(HideGas), disappearTime);
+    }
+
     private void Awake()
     {
         gasSr = gas.GetComponent<SpriteRenderer>();
@@ -50,7 +55,6 @@ public class GasSprayShooter : MonoBehaviour
         gasSr.enabled = true;
         gasAnimator.SetTrigger("isSpraying");
         gasRb.linearVelocity = shootDirection * shootForce;
-        Invoke(nameof(HideGas), disappearTime);
     }
 
     private void HideGas()

@@ -10,7 +10,7 @@ public class DoorPushScript : MonoBehaviour
     private Animator animator;
     private bool isTriggered;
     private bool isPlayerDodged;
-    private float triggerTime = 0f;
+    private float triggerTime;
     private float waitTime = 0.4f;
 
 
@@ -22,11 +22,11 @@ public class DoorPushScript : MonoBehaviour
 
     private void Update()
     {
-        if (!player.IsPushed && isTriggered && Time.time - triggerTime >= waitTime + 0.1f)
+        if (!player.isPushed && isTriggered && Time.time - triggerTime >= waitTime + 0.1f)
         {
             isPlayerDodged = true;
         }
-        else if (!player.IsPushed && isTriggered && Time.time - triggerTime >= waitTime)
+        else if (!player.isPushed && isTriggered && Time.time - triggerTime >= waitTime)
         {
             animator.SetTrigger("isOpening");
         }
@@ -44,12 +44,12 @@ public class DoorPushScript : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (!collision.gameObject.CompareTag("Player") || player.IsPushed || isPlayerDodged || !isTriggered)
+        if (!collision.gameObject.CompareTag("Player") || player.isPushed || isPlayerDodged || !isTriggered)
             return;
 
         if (Time.time - triggerTime >= waitTime)
         {
-            player.IsPushed = true;
+            player.isPushed = true;
             animator.SetTrigger("isOpening");
             playerRb.AddForce(Vector2.left * 10.5f, ForceMode2D.Impulse);
             StartCoroutine(Fall(player.transform));

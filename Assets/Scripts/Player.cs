@@ -1,12 +1,13 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class Player : MonoBehaviour
 {
     public bool LooksLeft => sr.flipX;
     public bool LooksRight => !sr.flipX;
-    public bool IsPushed;
+    [FormerlySerializedAs("IsPushed")] public bool isPushed;
     private Rigidbody2D rb;
     private float movingSpeed = 5f;
     private Animator animator;
@@ -27,7 +28,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (IsPushed)
+        if (isPushed)
             return;
 
         isRunning = false;
@@ -86,7 +87,7 @@ public class Player : MonoBehaviour
         foreach (var point in raycasts)
         {
             var hit = Physics2D.Raycast(point, Vector2.down, rayDistance, LayerMask.GetMask("Ground"));
-            if (hit.collider != null)
+            if (hit.collider is not null)
                 return true;
         }
         return false;
