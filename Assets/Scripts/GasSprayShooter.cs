@@ -55,6 +55,7 @@ public class GasSprayShooter : MonoBehaviour
         gasSr.enabled = true;
         gasAnimator.SetTrigger("isSpraying");
         gasRb.linearVelocity = shootDirection * shootForce;
+        Invoke(nameof(HideGas), disappearTime);
     }
 
     private void HideGas()
