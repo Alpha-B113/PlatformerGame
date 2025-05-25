@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public bool LooksLeft => sr.flipX;
     public bool LooksRight => !sr.flipX;
     [FormerlySerializedAs("IsPushed")] public bool isPushed;
+    public static Vector3 StartPosition;
     private Rigidbody2D rb;
     private float movingSpeed = 5f;
     private Animator animator;
@@ -24,6 +25,8 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        if (StartPosition != Vector3.zero)
+            transform.position = StartPosition;
     }
 
     private void Update()

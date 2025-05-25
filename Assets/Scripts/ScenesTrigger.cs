@@ -10,6 +10,7 @@ public class ScenesTrigger : MonoBehaviour
     {
         if (isTriggered && Input.GetKeyDown(KeyCode.E))
         {
+            Player.StartPosition = Vector3.zero;
             SceneManager.LoadScene(SceneName);
         }
     }
