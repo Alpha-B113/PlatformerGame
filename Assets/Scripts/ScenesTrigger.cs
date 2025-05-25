@@ -8,7 +8,7 @@ public class ScenesTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (isTriggered && Input.GetKeyDown(KeyCode.E))
+        if (isTriggered && (SceneName == "Dungeons" || Input.GetKeyDown(KeyCode.E)))
         {
             Player.StartPosition = Vector3.zero;
             SceneManager.LoadScene(SceneName);
