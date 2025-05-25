@@ -3,64 +3,70 @@ using UnityEngine;
 
 public class TapeRecorder : MonoBehaviour
 {
-    public GameObject Note;
-    private SpriteRenderer noteSr;
-    private BoxCollider2D noteCollider;
-
-    public float riseSpeed = 3f;
-    public float duration = 2f;
+    [Tooltip("Префаб ноты")]
+    public GameObject NotePrefab;
 
 
+    [Tooltip("Скорость подъёма ноты вверх")]
+    private float riseSpeed = 3f;
 
-    private void Awake()
-    {
-        noteSr = Note.GetComponent<SpriteRenderer>();
-        noteCollider = Note.GetComponent<BoxCollider2D>();
-    }
+    [Tooltip("Время жизни ноты в секундах")]
+    private float duration = 3.5f;
+
+    [Tooltip("Интервал между выпуском нот в секундах")]
+    private float emissionInterval = 1.5f;
 
     private void Start()
     {
-        StartCoroutine(SpawnSmoke());
+        StartCoroutine(SpawnNotes());
     }
 
-    private IEnumerator SpawnSmoke()
+    private IEnumerator SpawnNotes()
     {
         while (true)
         {
-            StartCoroutine(MoveSmokeUp());
-            yield return new WaitForSeconds(2f);
+            SpawnNote();
+            yield return new WaitForSeconds(emissionInterval);
         }
     }
 
-    private IEnumerator MoveSmokeUp()
+    private void SpawnNote()
     {
-        noteSr.enabled = true;
-        noteCollider.enabled = true;
+        // Определяем позицию появления
+        Vector3 spawnPosition = transform.position;
 
-        var elapsed = 0f;
-        var startPosition = transform.position;
+        // Создаем новую ноту
+        GameObject note = Instantiate(NotePrefab, spawnPosition, Quaternion.identity);
 
-        var amplitude = 0.3f;
-        var frequency = 8f;
+        // Запускаем корутину движения для этой ноты
+        StartCoroutine(MoveNoteUp(note));
+    }
+
+    private IEnumerator MoveNoteUp(GameObject note)
+    {
+        SpriteRenderer sr = note.GetComponent<SpriteRenderer>();
+        BoxCollider2D collider = note.GetComponent<BoxCollider2D>();
+
+        if (sr != null) sr.enabled = true;
+        if (collider != null) collider.enabled = true;
+
+        float elapsed = 0f;
+        Vector3 startPosition = note.transform.position;
+
+        float amplitude = 0.3f;     // Размах колебаний влево-вправо
+        float frequency = 8f;       // Частота покачивания
 
         while (elapsed < duration)
         {
-            var yOffset = riseSpeed * elapsed;
-            var xOffset = Mathf.Sin(elapsed * frequency) * amplitude;
-            var newPosition = startPosition + new Vector3(xOffset, yOffset, 0);
-            Note.transform.position = newPosition;
+            float yOffset = riseSpeed * elapsed;
+            float xOffset = Mathf.Sin(elapsed * frequency) * amplitude;
+            Vector3 newPosition = startPosition + new Vector3(xOffset, yOffset, 0);
+            note.transform.position = newPosition;
+
             elapsed += Time.deltaTime;
             yield return null;
         }
 
-        HideSmoke();
-    }
-
-
-    private void HideSmoke()
-    {
-        Note.transform.position = transform.position;
-        noteCollider.enabled = false;
-        noteSr.enabled = false;
+        Destroy(note);
     }
 }
