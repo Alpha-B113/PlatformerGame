@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class DoorPushScript : MonoBehaviour
 {
     [SerializeField] private Player player;
+    [SerializeField] private Vector2 pushDirection = Vector2.left;
+    private Quaternion targetRotation = Quaternion.Euler(0, 0, 90);
     private Rigidbody2D playerRb;
     private Animator animator;
     private bool isTriggered;
@@ -14,10 +16,16 @@ public class DoorPushScript : MonoBehaviour
     private float waitTime = 0.4f;
 
 
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
         playerRb = player.GetComponent<Rigidbody2D>();
+        if (pushDirection == Vector2.left)
+            targetRotation = Quaternion.Euler(0, 0, 90);
+        else if (pushDirection == Vector2.right)
+            targetRotation = Quaternion.Euler(0, 0, -90);
+
     }
 
     private void Update()
@@ -51,7 +59,7 @@ public class DoorPushScript : MonoBehaviour
         {
             player.isPushed = true;
             animator.SetTrigger("isOpening");
-            playerRb.AddForce(Vector2.left * 10.5f, ForceMode2D.Impulse);
+            playerRb.AddForce(pushDirection * 10.5f, ForceMode2D.Impulse);
             StartCoroutine(Fall(player.transform));
         }
     }
@@ -59,10 +67,9 @@ public class DoorPushScript : MonoBehaviour
     private IEnumerator Fall(Transform playerTransform)
     {
         var startRotation = playerTransform.rotation;
-        var targetRotation = startRotation * Quaternion.Euler(0, 0, 90);
         var elapsed = 0f;
 
-        while (elapsed < 1f)
+        while (elapsed < 2f)
         {
             elapsed += Time.deltaTime * (360 / 100f);
             playerTransform.rotation = Quaternion.Slerp(startRotation, targetRotation, elapsed);

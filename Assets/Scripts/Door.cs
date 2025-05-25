@@ -3,6 +3,7 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     private Animator animator;
+    protected bool IsOpened;
 
     void Awake()
     {
@@ -20,12 +21,14 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        OnTrigger(other, "isOpening", "isClosing" );
+        OnTrigger(other, "isOpening", "isClosing");
+        IsOpened = true;
     }
 
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        OnTrigger(other, "isClosing", "isOpening" );
+        OnTrigger(other, "isClosing", "isOpening");
+        IsOpened = false;
     }
 }
