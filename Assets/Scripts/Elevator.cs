@@ -10,7 +10,6 @@ public class Elevator : Door
     private void Start()
     {
         playerSr = player.GetComponent<SpriteRenderer>();
-
     }
 
     private void Update()

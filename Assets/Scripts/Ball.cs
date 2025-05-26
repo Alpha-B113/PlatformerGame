@@ -3,8 +3,6 @@ using UnityEngine;
 public class BallKick : MonoBehaviour
 {
     private Vector2 kickForce = new Vector2(-12f, 5f);
-    // [SerializeField] private float destroyAfterSeconds = 5f;
-
     private Rigidbody2D rb;
 
     void Start()
