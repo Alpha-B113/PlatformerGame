@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
@@ -5,6 +6,7 @@ using UnityEngine.Video;
 public class VideoFinishedChecker : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
+    public AudioSource audioSource;
 
     private void Start()
     {
@@ -13,6 +15,13 @@ public class VideoFinishedChecker : MonoBehaviour
 
     private void OnVideoEnd(VideoPlayer vp)
     {
+        audioSource.Play();
+        StartCoroutine(LoadSceneAfterSound(4f));
+    }
+
+    private IEnumerator LoadSceneAfterSound(float delay)
+    {
+        yield return new WaitForSeconds(delay);
         SceneManager.LoadScene("Room");
     }
 }
