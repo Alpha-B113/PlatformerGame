@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "\u043A\u043E\u043B\u044C\u0446\u043E \u0434\u044B\u043C\u0430-fotor-bg-remover-2025052515559_0": -3354144403620073977
+      "\u043A\u043E\u043B\u044C\u0446\u043E \u0434\u044B\u043C\u0430-fotor-bg-remover-2025052515559_1": 6050045115069390626
+      "\u043A\u043E\u043B\u044C\u0446\u043E \u0434\u044B\u043C\u0430-fotor-bg-remover-2025052515559_2": -6928875342416309520
+      "\u043A\u043E\u043B\u044C\u0446\u043E \u0434\u044B\u043C\u0430-fotor-bg-remover-2025052515559_3": -6521484635635568933
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
