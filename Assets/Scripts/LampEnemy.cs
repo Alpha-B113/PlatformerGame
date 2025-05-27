@@ -3,6 +3,7 @@ using UnityEngine;
 public class LampEnemy : MonoBehaviour
 {
     private Rigidbody2D rb;
+    public AudioSource fallingSound;
 
     private void Awake()
     {
@@ -21,6 +22,7 @@ public class LampEnemy : MonoBehaviour
     {
         if (collision.collider.CompareTag("Ground"))
         {
+            fallingSound.Play();
             rb.bodyType = RigidbodyType2D.Kinematic;
         }
     }

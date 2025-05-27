@@ -9,6 +9,31 @@
   <component name="ChangeListManager">
     <list default="true" id="5edb65ac-8335-4121-b38b-0d0fc4cdc47d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Banana_0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Banana_0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Music/Bon_Jovi_-_Its_my_life.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Music/Bon_Jovi_-_Its_my_life.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player 1 1 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player 1 1 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alarm.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alarm.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dungeons.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dungeons.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Newscapers.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Newscapers.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Obshaga.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Obshaga.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Room.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Room.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ball.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallEnemy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BananaEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BananaEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BirdEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BirdEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DoorEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DoorEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Elevator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Elevator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LampEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LampEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WaterDrop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WaterDrop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Будильник.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Будильник.mp4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/плохая дверь.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/плохая дверь.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +42,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BackgroundMusic.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -103,6 +131,7 @@
       <workItem from="1746507300091" duration="1326000" />
       <workItem from="1747601111882" duration="82000" />
       <workItem from="1747755706158" duration="5638000" />
+      <workItem from="1748313998147" duration="11980000" />
     </task>
     <servers />
   </component>

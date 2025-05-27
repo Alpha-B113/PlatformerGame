@@ -16,6 +16,7 @@ public class Door : MonoBehaviour
         {
             animator.SetBool(falseEvent, false);
             animator.SetBool(trueEvent, true);
+            
         }
     }
 

@@ -6,12 +6,13 @@ public class BananaEnemy : MonoBehaviour
 {
     private float fallAngle = 90f;
     private float rotationSpeed = 360f;
-
+    public AudioSource fallSound;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
+            fallSound.Play();
             StartCoroutine(Fall(other.transform));
         }
     }

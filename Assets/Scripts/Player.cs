@@ -19,6 +19,8 @@ public class Player : MonoBehaviour
     private const string IsRunning = "IsRunning";
     private const string IsJumping = "IsJumping";
     private float rayDistance = 1f;
+    public AudioSource jumpSound;
+    public AudioSource deathSound;
 
     private void Awake()
     {
@@ -37,6 +39,7 @@ public class Player : MonoBehaviour
         isRunning = false;
         if (Input.GetKey(KeyCode.W) && isGrounded)
         {
+            jumpSound.Play();
             Jump();
         }
 
@@ -73,6 +76,7 @@ public class Player : MonoBehaviour
     {
         if (!isDied && collision.collider.CompareTag("Enemy"))
         {
+            deathSound.Play();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }

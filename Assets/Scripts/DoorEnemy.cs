@@ -14,7 +14,7 @@ public class DoorPushScript : MonoBehaviour
     private bool isPlayerDodged;
     private float triggerTime;
     private float waitTime = 0.4f;
-
+    public AudioSource hitSound;
 
 
     private void Awake()
@@ -47,6 +47,7 @@ public class DoorPushScript : MonoBehaviour
         {
             isTriggered = true;
             triggerTime = Time.time;
+            hitSound.Play();
         }
     }
 

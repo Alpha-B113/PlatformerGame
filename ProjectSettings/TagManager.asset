@@ -15,6 +15,7 @@ TagManager:
   - GoodApple
   - CocroachEnemy
   - Gas
+  - background_music
   layers:
   - Default
   - TransparentFX

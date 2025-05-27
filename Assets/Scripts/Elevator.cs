@@ -6,6 +6,7 @@ public class Elevator : Door
     public Player player;
     public Transform destination;
     private SpriteRenderer playerSr;
+    public AudioSource doorSound;
 
     private void Start()
     {
@@ -25,7 +26,7 @@ public class Elevator : Door
         // player.transform.position = destination.position;
         var startPosition = player.transform.position;
         var endPosition = destination.position;
-
+        doorSound.Play();
         StartCoroutine(DoTeleport(startPosition, endPosition));
     }
 

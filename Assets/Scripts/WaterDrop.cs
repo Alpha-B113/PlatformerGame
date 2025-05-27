@@ -6,6 +6,7 @@ public class WaterDrop : MonoBehaviour
     public GameObject waterDropPrefab;
     private float dropIntervalMin = 0.6f;
     private float dropIntervalMax = 1.2f;
+    public AudioSource waterDropSound;
 
     private void Start()
     {
@@ -21,6 +22,7 @@ public class WaterDrop : MonoBehaviour
             var sr = drop.GetComponent<SpriteRenderer>();
             rb.gravityScale = 1.5f;
             sr.enabled = true;
+            waterDropSound.Play();
             var randomInterval = Random.Range(dropIntervalMin, dropIntervalMax);
             yield return new WaitForSeconds(randomInterval);
         }
