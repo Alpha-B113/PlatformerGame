@@ -4,13 +4,12 @@ public class BirdEnemy : MonoBehaviour
 {
     public Transform Player;
     public BirdTrigger Trigger;
-    public AudioSource birdFlyingSound
-        ;
+    public AudioSource birdFlyingSound;
     private SpriteRenderer spriteRenderer;
     private float speed;
     private Vector3 direction;
     private float angle;
-    
+
 
     void Awake()
     {
@@ -22,15 +21,19 @@ public class BirdEnemy : MonoBehaviour
     {
         if (Trigger.IsTriggered)
         {
-            birdFlyingSound.Play();
+            if (!birdFlyingSound.isPlaying)
+                birdFlyingSound.Play();
             transform.position = Vector2.MoveTowards(transform.position, Player.position, speed);
             direction = (Player.position - transform.position).normalized;
             angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             FlipBird(angle);
         }
-        //else if (direction != null)
         else
+        {
             transform.position += direction * speed;
+        }
+        if (Trigger.attacksNumber == 0)
+            birdFlyingSound.Stop();
     }
 
     private void FlipBird(float angle)

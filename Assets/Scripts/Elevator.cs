@@ -6,11 +6,14 @@ public class Elevator : Door
     public Player player;
     public Transform destination;
     private SpriteRenderer playerSr;
+    private Rigidbody2D playerRb;
     public AudioSource doorSound;
+    public bool ShowSr;
 
     private void Start()
     {
         playerSr = player.GetComponent<SpriteRenderer>();
+        playerRb = player.GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -26,15 +29,17 @@ public class Elevator : Door
         // player.transform.position = destination.position;
         var startPosition = player.transform.position;
         var endPosition = destination.position;
-        doorSound.Play();
+        if (doorSound != null)
+            doorSound.Play();
         StartCoroutine(DoTeleport(startPosition, endPosition));
     }
 
     IEnumerator DoTeleport(Vector3 start, Vector3 end)
     {
-        var duration = 0.5f;
+        var duration = ShowSr ? 1.5f : 0.5f;
         var elapsed = 0f;
-        playerSr.enabled = false;
+        playerSr.enabled = ShowSr;
+        playerRb.bodyType = RigidbodyType2D.Kinematic;
 
         while (elapsed < duration)
         {
@@ -46,6 +51,7 @@ public class Elevator : Door
         player.transform.position = end;
 
         playerSr.enabled = true;
+        playerRb.bodyType = RigidbodyType2D.Dynamic;
     }
 
 }

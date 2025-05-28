@@ -3,25 +3,25 @@ using UnityEngine;
 public class BirdTrigger : MonoBehaviour
 {
     public bool IsTriggered { get; private set; }
-    private int attacksNumber;
+    public int attacksNumber;
 
     void Awake()
     {
-        attacksNumber = Random.Range(1, 5);
+        attacksNumber = Random.Range(2, 5);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.collider.CompareTag("Player") && attacksNumber > 0)
+        if (collision.CompareTag("Player") && attacksNumber > 0)
         {
             IsTriggered = true;
             attacksNumber--;
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.collider.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
             IsTriggered = false;
     }
 }

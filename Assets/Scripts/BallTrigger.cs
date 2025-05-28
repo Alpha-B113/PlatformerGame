@@ -12,9 +12,9 @@ public class BallTrigger : MonoBehaviour
     {
         if (!isTriggered && collision.CompareTag("Player"))
         {
+            isTriggered = true;
             ball.Kick();
             ballSound.Play();
-            isTriggered = true;
         }
     }
 }
