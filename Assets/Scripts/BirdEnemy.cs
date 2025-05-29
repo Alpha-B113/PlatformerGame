@@ -14,7 +14,7 @@ public class BirdEnemy : MonoBehaviour
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        speed = Random.Range(3.5f, 4.0f) / 100f;
+        speed = Random.Range(3.55f, 4.0f) / 100f;
     }
 
     void Update()
