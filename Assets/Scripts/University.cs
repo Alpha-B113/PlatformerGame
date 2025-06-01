@@ -7,7 +7,12 @@ public class University : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Menu");
+            Invoke("LoadMenu", 3f);
         }
+    }
+
+    private void LoadMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

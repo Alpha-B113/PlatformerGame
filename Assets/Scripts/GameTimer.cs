@@ -5,10 +5,12 @@ public class GameTimer : MonoBehaviour
 {
     public TextMeshProUGUI TimerLocation;
     public static float TotalTime { get; private set; }
+    public static bool StopTimer { get; set; }
 
     void Update()
     {
-        TotalTime += Time.deltaTime;
+        if (!StopTimer)
+            TotalTime += Time.deltaTime;
         var totalSeconds = (int)TotalTime;
         var minutes = (int)(totalSeconds / 60);
         var seconds = (int)(totalSeconds % 60);

@@ -4,8 +4,10 @@ using UnityEngine.UI;
 
 public class Hints : MonoBehaviour
 {
+
     public string HintText;
     public HintTrigger Trigger;
+
     private Animator animator;
     private TextMeshProUGUI hintLocation;
     private Image image;
@@ -51,6 +53,14 @@ public class Hints : MonoBehaviour
     private void ShowHint()
     {
         ShowHintLocation();
+        if (HintText == "Ваш результат: ")
+        {
+            GameTimer.StopTimer = true;
+            var totalSeconds = GameTimer.TotalTime;
+            var minutes = (int)(totalSeconds / 60);
+            var seconds = (int)(totalSeconds % 60);
+            HintText += string.Format("{0:00}:{1:00}", minutes, seconds);
+        }
         hintLocation.text = HintText;
         animator.SetTrigger("isOpening");
         Invoke("ShowText", 0.2f);
