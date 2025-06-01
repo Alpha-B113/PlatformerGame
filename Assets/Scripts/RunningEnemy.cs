@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class RunningEnemy : MonoBehaviour
 {
-    public AudioSource ratSqueak;
     private Vector2 direction = new(-0.1f, 0);
     private Rigidbody2D rb;
     private SpriteRenderer sr;
@@ -24,12 +23,10 @@ public class RunningEnemy : MonoBehaviour
         {
             direction.x *= -1;
             sr.flipX ^= true;
-            ratSqueak.Play();
         }
         else if (other.CompareTag("Gas"))
         {
             gameObject.SetActive(false);
-            ratSqueak.Stop();
         }
     }
 }
