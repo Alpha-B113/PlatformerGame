@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameTimer : MonoBehaviour
 {
@@ -7,7 +8,16 @@ public class GameTimer : MonoBehaviour
     public static float TotalTime { get; private set; }
     public static bool StopTimer { get; set; }
 
-    void Update()
+    private void Awake()
+    {
+        if (SceneManager.GetActiveScene().name == "Room")
+        {
+            StopTimer = false;
+            TotalTime = 0f;
+        }
+    }
+
+    private void Update()
     {
         if (!StopTimer)
             TotalTime += Time.deltaTime;
