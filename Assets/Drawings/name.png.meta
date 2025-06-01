@@ -1,10 +1,40 @@
 fileFormatVersion: 2
-guid: ea843f549511ed347b862b48a3281687
+guid: 1e13dec79449a690aba46c23435723b6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6549010005704227135
-    second: "\u0440\u0430\u043C\u043A\u0430-fotor-bg-remover-20250531174253_0"
+      213: -1503990955169150816
+    second: name_0
+  - first:
+      213: -859189547760446938
+    second: name_1
+  - first:
+      213: -5155002061112825379
+    second: name_2
+  - first:
+      213: 5662187840507275593
+    second: name_3
+  - first:
+      213: 784489075458152563
+    second: name_4
+  - first:
+      213: 3542361924685725647
+    second: name_5
+  - first:
+      213: 8365274041308731457
+    second: name_6
+  - first:
+      213: -3959131046947156560
+    second: name_7
+  - first:
+      213: 4842110866808915753
+    second: name_8
+  - first:
+      213: 7517256991878289988
+    second: name_9
+  - first:
+      213: -3083355600081005486
+    second: name_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,23 +143,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u0440\u0430\u043C\u043A\u0430-fotor-bg-remover-20250531174253_0"
+      name: name_0
       rect:
         serializedVersion: 2
-        x: 14
+        x: 0
         y: 0
-        width: 475
-        height: 105
+        width: 61
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f39ba7ce6e1c2ea50800000000000000
-      internalID: 6549010005704227135
+      spriteID: 0a80ebbd130c02be0800000000000000
+      internalID: -1503990955169150816
       vertices: []
       indices: 
       edges: []
@@ -138,7 +168,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bab85ab46ba835175a116ec612f56c7d
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +178,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u0440\u0430\u043C\u043A\u0430-fotor-bg-remover-20250531174253_0": 6549010005704227135
+      name_0: -1503990955169150816
+      name_1: -859189547760446938
+      name_10: -3083355600081005486
+      name_2: -5155002061112825379
+      name_3: 5662187840507275593
+      name_4: 784489075458152563
+      name_5: 3542361924685725647
+      name_6: 8365274041308731457
+      name_7: -3959131046947156560
+      name_8: 4842110866808915753
+      name_9: 7517256991878289988
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
