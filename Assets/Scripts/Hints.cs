@@ -63,7 +63,7 @@ public class Hints : MonoBehaviour
         }
         hintLocation.text = HintText;
         animator.SetTrigger("isOpening");
-        Invoke("ShowText", 0.2f);
+        Invoke("ShowText", 0.3f);
     }
 
     private void HideHint()

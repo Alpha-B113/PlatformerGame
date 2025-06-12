@@ -7,7 +7,7 @@ public class University : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Invoke("LoadMenu", 3f);
+            LoadMenu();
         }
     }
 
