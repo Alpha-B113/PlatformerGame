@@ -69,7 +69,6 @@ public class PauseMenu : MonoBehaviour
     public void LoadMenu()
     {
         SceneManager.LoadScene("Menu");
-        ChangeActiveOfSomeElements(false);
         Player.StartPosition = Vector3.zero;
         ChangePauseState();
     }
@@ -93,13 +92,15 @@ public class PauseMenu : MonoBehaviour
 
     private void BackGroundMusicOn()
     {
-        BackgroundMusicManager.Instance.backgroundMusic.volume = BackgroundMusicManager.Instance.standartVolume;
+        if (BackgroundMusicManager.Instance != null)
+            BackgroundMusicManager.Instance.backgroundMusic.volume = BackgroundMusicManager.Instance.standartVolume;
         CheckMark.enabled = true;
     }
 
     private void BackGroundMusicOff()
     {
-        BackgroundMusicManager.Instance.backgroundMusic.volume = 0f;
+        if (BackgroundMusicManager.Instance != null)
+            BackgroundMusicManager.Instance.backgroundMusic.volume = 0f;
         CheckMark.enabled = false;
     }
 }
