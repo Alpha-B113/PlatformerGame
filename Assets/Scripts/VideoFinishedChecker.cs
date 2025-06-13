@@ -8,6 +8,15 @@ public class VideoFinishedChecker : MonoBehaviour
     public VideoPlayer videoPlayer;
     public AudioSource audioSource;
 
+    private void Awake()
+    {
+        if (videoPlayer.clip == null)
+        {
+            SceneManager.LoadScene("Room");
+            return;
+        }
+    }
+
     private void Start()
     {
         videoPlayer.loopPointReached += OnVideoEnd;

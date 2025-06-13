@@ -8,6 +8,11 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Alarm");
     }
 
+    public void ChangePauseState()
+    {
+        PauseMenu.Instance.ChangePauseState();
+    }
+
     public void OnQuitButton()
     {
 #if UNITY_EDITOR

@@ -1,11 +1,13 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class BackgroundMusicManager : MonoBehaviour
 {
     public string SceneName;
-    private static BackgroundMusicManager Instance;
-    private AudioSource backgroundMusic;
+    public static BackgroundMusicManager Instance;
+    public float standartVolume;
+    public AudioSource backgroundMusic;
 
     private void Awake()
     {
@@ -13,6 +15,11 @@ public class BackgroundMusicManager : MonoBehaviour
         {
             Instance = this;
             backgroundMusic = GetComponent<AudioSource>();
+            standartVolume = backgroundMusic.volume;
+            if (PauseMenu.Instance != null && !PauseMenu.IsMusicOn)
+            {
+                backgroundMusic.volume = 0f;
+            }
             return;
         }
         Destroy(gameObject);
