@@ -12,18 +12,21 @@ public class GasSprayShooter : MonoBehaviour
     private float disappearTime = 1f;
     private bool isShooting;
     private Vector2 shootDirection;
-
-    private void Start()
-    {
-        Invoke(nameof(HideGas), disappearTime);
-    }
+    private AudioSource spraySound;
 
     private void Awake()
     {
         gasSr = gas.GetComponent<SpriteRenderer>();
         gasAnimator = gas.GetComponent<Animator>();
         gasRb = gas.GetComponent<Rigidbody2D>();
+        spraySound = GetComponent<AudioSource>();
         HideGas();
+    }
+
+
+    private void Start()
+    {
+        Invoke(nameof(HideGas), disappearTime);
     }
 
     private void Update()
@@ -31,6 +34,7 @@ public class GasSprayShooter : MonoBehaviour
         if (!isShooting && GasSpray.GasSprayCount > 0 && Input.GetKeyDown(KeyCode.F))
         {
             isShooting = true;
+            spraySound.Play();
             GasSpray.GasSprayCount--;
             playerAnimatorManager.TryChangeController();
             ShootGas();

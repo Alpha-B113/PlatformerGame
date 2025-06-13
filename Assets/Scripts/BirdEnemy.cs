@@ -14,7 +14,7 @@ public class BirdEnemy : MonoBehaviour
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        speed = Random.Range(3.55f, 4.0f) / 100f;
+        speed = 7;
     }
 
     void Update()
@@ -23,15 +23,16 @@ public class BirdEnemy : MonoBehaviour
         {
             if (!birdFlyingSound.isPlaying)
                 birdFlyingSound.Play();
-            transform.position = Vector2.MoveTowards(transform.position, Player.position, speed);
+            transform.position = Vector2.MoveTowards(transform.position, Player.position, speed * Time.deltaTime);
             direction = (Player.position - transform.position).normalized;
             angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             FlipBird(angle);
         }
         else
         {
-            transform.position += direction * speed;
+            transform.position += direction * speed * Time.deltaTime;
         }
+
         if (Trigger.attacksNumber == 0)
             birdFlyingSound.Stop();
     }
