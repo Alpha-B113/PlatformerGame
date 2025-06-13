@@ -13,6 +13,9 @@ public class University : MonoBehaviour
 
     private void LoadMenu()
     {
-        SceneManager.LoadScene("Menu");
+        if (PauseMenu.Instance != null)
+            PauseMenu.Instance.LoadMenu();
+        else
+            SceneManager.LoadScene("Menu");
     }
 }
