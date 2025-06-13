@@ -7,13 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5edb65ac-8335-4121-b38b-0d0fc4cdc47d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RunningEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RunningEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/желтый стул-fotor-bg-remover-2025060118579.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/желтый стул-fotor-bg-remover-2025060118579.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/красный стул-fotor-bg-remover-20250601185210.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/красный стул-fotor-bg-remover-20250601185210.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/синий стул-fotor-bg-remover-20250601185256.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/синий стул-fotor-bg-remover-20250601185256.png.meta" afterDir="false" />
-    </list>
+    <list default="true" id="5edb65ac-8335-4121-b38b-0d0fc4cdc47d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,9 +16,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "DiOsa1317"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Alpha-B113/PlatformerGame.git",
+    "accountId": "dd1bdb28-784d-4ae9-95bf-88b5bf41c5cf"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BackgroundMusic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/diliya/Desktop/BPC#/final_final_time/PlatformerGame/Assets/Drawings/resume.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/diliya/Desktop/BPC#/final_final_time/PlatformerGame/Assets/Scenes/Dungeons.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/diliya/Desktop/BPC#/final_final_time/PlatformerGame/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/diliya/Desktop/BPC#/final_final_time/PlatformerGame/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -118,6 +128,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
     <option name="hasUnityReference" value="true" />
@@ -138,6 +149,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="More pause menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="More pause menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
